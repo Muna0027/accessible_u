@@ -88,9 +88,11 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search">
+            <!-- fixed label code snippet -->
+            <input id="search-input" class="form-control mr-sm-2" type="text" role="search" aria-label="Search" placeholder="Search"> 
             <button class="btn btn-success my-2 my-sm-0" type="submit">Go</button>
           </form>
+        
         </div>
       </div>
     </div>
@@ -133,7 +135,7 @@
                 </p>
               </div>
 
-              <div class="heading">Bienvenido!</div>
+              <h1 class="heading">Bienvenido!</h1> 
               <p>Accesible Universidad (UA) es una universidad ficticia, y esta es su
                 página de ficción. Esta página está diseñada para demostrar una variedad de
                 común de diseño web que se traducen en problemas de los visitantes con discapacidad
@@ -145,7 +147,9 @@
 
               <div class="heading">Can you spot the barriers?</div>
               <p><img style="float:left;max-width:200px;margin-right:10px" src="images/8675309-block.jpg"/> There are at least 18 accessibility issues on this page.
-                To see a list of all known issues, <a href="issues.html">click here</a>.
+                To see a list of all known issues,
+                 <!-- fixed code snippet- colour contrast -->
+                <a href="issues.html" style="color: #007BFF;">Click here</a> 
                 To see a more accessible version of this same page, <a href="after_u.html">click here</a>.
                 To view a popup list of accessibility issues:</p>
                 <a class="btn btn-primary" href="cheatsheet.html">click here</a>
@@ -232,7 +236,11 @@
                 <p>Don't miss this event.</p>
                 <img class="hr" src="images/hr.png" alt="horizontal line graphic">
                 <h6>December 31</h6>
-                <h5><a href="#">New years eve party</a></h4>
+                <h5><a href="#" style="color: #0022EE; background-color: #f9f9f9;"> 
+
+                  New Year's Eve Party 
+                  
+                  </a> </h4>
                 <p>Ring in the new year with your friends</p>
                 <img class="hr" src="images/hr.png" alt="horizontal line graphic">
               </div>
@@ -248,12 +256,16 @@
                   <div id="error"></div>
 
                   <div class="required form-group">
+                    <!-- Fixed name code snippet -->
                     Name:
-                    <input type="text" name="name" class="form-control" />
+                    <input type="text" id="name" name="name" class="form-control"> 
                   </div>
                   <div class="required form-group">
                     Email:
-                    <input type="text" name="email" class="form-control" />
+                    <!-- Fixed email code snippet -->
+                    <label for="email">Email:</label> 
+
+                  <input type="email" id="email" name="email" class="form-control"> 
                   </div>
                   <div class="form-group">
                     Country:
@@ -297,9 +309,13 @@
             <li><a href="https://facebook.com"><img src="images/8675309-social-facebook.png" alt="FB"></a></li>
             <li><a href="https://twitter.com"><img src="images/8675309-social-twitter.png" alt="TW"></a</li>
           </ul>
-          <ul class="list-unstyled">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Directions</a></li>
+          <nav>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="directions.html">Directions</a></li>
+            </ul>
+          </nav>
+          
           </ul>
           <hr>
         </div>
